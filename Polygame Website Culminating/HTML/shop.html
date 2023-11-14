@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Polygame Shop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../CSS/index.css">
+</head>
+	
+<body class="pal-bg-grey-1" data-spy="scroll" data-target="#shopCarousel">
+	
+	<!--Temporary logo on top, maybe switch out for a gif or video or reactive image instead of static?-->
+	<div class="bg-dark pal-bg-grey-2" id="PolygameHeader">
+		<img class="img-fluid mx-auto d-block" src="../Images/TaglineLogo.png" width="840" height="400" alt="Polygame: Everything Here."/>
+	</div>
+	
+	<!--Simple navbar, make pretty later-->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-black sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img src="../Images/Logo.png" width="50" height="50" alt="Polygame"/> </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="shop.html">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="news.html">News</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="events.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="aboutus.html">About Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Carousel -->
+	<div id="shopCarousel" class="carousel slide carousel-fade m-0" data-bs-ride="carousel">
+		
+		<!-- Indicators/dots -->
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="0" class="active"></button>
+			<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="1"></button>
+			<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="2"></button>
+			<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="3"></button>
+		</div>
+		
+		<!-- The slideshow/carousel -->
+		<div class="carousel-inner h-100">
+			
+			<!--Item 1 in Carousel-->
+			<div class="carousel-item active">
+				<div class="mask h-100" style="background: linear-gradient(45deg, rgba(255, 0, 255, 0.6), rgba(0, 0, 255, 0.6) 100%);">
+					<div class="d-flex align-items-center h-100 text-white text-start row carousel-text">
+						<div class="col-5">
+							<h2 class="">Newest Releases from Nintendo</h2>
+							<a class="btn btn-outline-light" href="#Nintendo">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--Item 2 in Carousel-->
+			<div class="carousel-item">
+				<div class="mask h-100" style="background: linear-gradient(45deg, rgba(0, 255, 0, 0.6), rgba(0, 0, 0, 0.6) 100%);">
+					<div class="d-flex align-items-center h-100 text-white text-start row carousel-text">
+						<div class="col-5">
+							<h2 class="">Xbox Deals for the Holiday Season</h2>
+							<a class="btn btn-outline-light" href="#Xbox">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--Item 3 in Carousel-->
+			<div class="carousel-item">
+				<div class="mask h-100" style="background: linear-gradient(45deg, rgba(0, 0, 255, 0.6), rgba(255, 255, 255, 0.6) 100%);">
+					<div class="d-flex align-items-center h-100 text-white text-start row carousel-text">
+						<div class="col-5">
+							<h2 class="">PlayStation VR 2 - The Next Leap in VR Gaming</h2>
+							<a class="btn btn-outline-light" href="#Playstation">Pre-Order</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--Item 4 in Carousel-->
+			<div class="carousel-item">
+				<div class="mask h-100" style="background: linear-gradient(45deg, rgba(0, 255, 0, 0.6), rgba(0, 0, 255, 0.6) 100%);">
+					<div class="d-flex align-items-center h-100 text-white text-start row carousel-text">
+						<div class="col-5">
+							<h2 class="">Shop for the Leading Brands in PC Accessories</h2>
+							<a class="btn btn-outline-light" href="#PC">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- Left and right controls/icons -->
+		<button class="carousel-control-prev" type="button" data-bs-target="#shopCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#shopCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</button>
+	</div>
+	
+	<!--Shop Carousels-->
+	
+	<!--NINTENDO-->
+	<div class="pal-bg-grey-2 p-5" id="Nintendo">
+		<h1>Nintendo Switch</h1>
+		
+		<ul class="scrollable-x">
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Nintendo Switch</h4>
+					<figure><img class="img-fluid" src="../Images/ProductN1.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$399.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Switch Pro Controller</h4>
+					<figure><img class="img-fluid" src="../Images/ProductN2.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Scarlet &amp; Violet Double Pack</h4>
+					<figure><img class="img-fluid" src="../Images/ProductN3.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$129.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Super Monkey Ball HD</h4>
+					<figure><img class="img-fluid" src="../Images/ProductN4.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Splatoon 3</h4>
+					<figure><img class="img-fluid" src="../Images/ProductN5.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">The Legend of Zelda: BotW</h4>
+					<figure><img class="img-fluid" src="../Images/ProductN6.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<!--PLAYSTATION-->
+	<div class="pal-bg-grey-2 p-5" id="Playstation">
+		<h1>Playstation 5</h1>
+		
+		<ul class="scrollable-x">
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Playstation 5</h4>
+				  <figure><img class="img-fluid" src="../Images/ProductP1.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$599.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">PS5 Dualshock Controller</h4>
+					<figure><img class="img-fluid" src="../Images/ProductP2.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$99.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Playstation VR 2</h4>
+					<figure><img class="img-fluid" src="../Images/ProductP3.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$459.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Spider-Man Miles Morales</h4>
+					<figure><img class="img-fluid" src="../Images/ProductP4.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Elden Ring</h4>
+					<figure><img class="img-fluid" src="../Images/ProductP5.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<!--XBOX-->
+	<div class="pal-bg-grey-2 p-5" id="Xbox">
+		<h1>Xbox Series X</h1>
+		
+		<ul class="scrollable-x">
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Xbox Series X</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX1.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$559.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Xbox Series X Controller</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX2.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$99.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Forza Motorsport 5</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX3.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Halo Infinite</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX4.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+			  </div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Crash Bandicoot 4</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX5.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Far Cry 6 Gold Edition</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX6.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Microsoft Flight Simulator</h4>
+					<figure><img class="img-fluid" src="../Images/ProductX7.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$79.99</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<!--PC-->
+	<div class="pal-bg-grey-2 p-5" id="PC">
+		<h1>PC Parts &amp; Accessories</h1>
+		
+		<ul class="scrollable-x">
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Samsung Curved Monitor</h4>
+					<figure><img class="img-fluid" src="../Images/ProductC1.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$499.99</a>
+					</div>
+				</div>
+		  </li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Razer Viper Ultimate</h4>
+					<figure><img class="img-fluid" src="../Images/ProductC2.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$199.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">Logitech RGB Keyboard</h4>
+					<figure><img class="img-fluid" src="../Images/ProductC3.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$69.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">NVIDIA RTX 3090 GPU</h4>
+					<figure><img class="img-fluid" src="../Images/ProductC4.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$1999.99</a>
+					</div>
+				</div>
+			</li>
+			<li class="card container-fluid">
+				<div class="row text-center justify-content-center">
+					<h4 class="p-4 text-black text-center">AMD Ryzen 9 CPU</h4>
+					<figure><img class="img-fluid" src="../Images/ProductC5.png" alt=""></figure>
+					<div class="row justify-content-center" style="padding-bottom: 10px">
+						<a class="rounded col-5 shop-button p-2 text-center text-white" href="shop.html">$749.99</a>
+					</div>
+				</div>
+			</li>
+	  	</ul>
+	</div>
+	
+	<!--Footer-->
+	<div class="pal-bg-black" id="footer">
+		<div class="row">
+			<div class="col-4 text-center">
+				<div class="mt-5">
+					<h3 class=""><a href="index.html">Home</a></h3>
+					<h3 class=""><a href="shop.html">Shop</a></h3>
+					<h3 class=""><a href="news.html">News</a></h3>
+				</div>
+			</div>
+			<div class="col-4 text-center">
+				<a href="https://www.youtube.com"><img src="../Images/YouTubeIcon.png" class="mt-5 p-2" width="100" height="100" alt=""/></a>
+				<a href="https://www.facebook.com"><img src="../Images/FacebookIcon.png" class="mt-5 p-2" width="100" height="100" alt=""/></a>
+				<a href="https://www.twitter.com"><img src="../Images/TwitterIcon.png" class="mt-5 p-2" width="100" height="100" alt=""/></a>
+				<a href="https://www.linkedin.com"><img src="../Images/LinkedInIcon.png" class="mt-5 p-2" width="100" height="100" alt=""/></a>
+			</div>
+			<div class="col-4 text-center">
+				<div class="mt-5">
+					<h3 class=""><a href="events.html">Events</a></h3>
+					<h3 class=""><a href="aboutus.html">About Us</a></h3>
+					<h3 class=""><a href="info.html">Privacy Policy</a></h3>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h6 class="text-center p-5">Copyright ©2023 Polygame Ltd.®</h6>
+		</div>
+	</div>
+	
+</body>
+</html>

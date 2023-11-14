@@ -1,0 +1,236 @@
+/* Polygame CSS Document */
+
+/* General Text Properties */
+h1, h2 {
+	color: #FFFFFF;
+	font-family: Orbitron
+}
+
+h3, h4, h5, h6, p, a{
+	color: #FFFFFF;
+	font-family: "Utile Display", "Utile Display Light", "Utile Display Medium", "Utile Display Semibold", "Utile Display Black", "Utile Display Book"
+}
+/* General Text Properties End */
+
+/* Specific Text Properties */
+h1 {
+	font-weight: bolder;
+	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+nav {
+	font-size: 20px /*calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));*/
+}
+
+h2 {
+	font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p {
+	font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+/* Specific Text Properties End */
+
+/*Stop Horizontal Scrolling*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*Style links*/
+a{
+	transition: 0.3s;
+}
+
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF8600;
+}
+a:active {
+	text-decoration: none;
+	color: #8000A3;
+}
+
+/* Visual Elements */
+#PolygameHeader {
+	padding: 10px
+}
+
+#HomepageImage {
+	background: repeating-linear-gradient(60deg, #8000A3, #FF8600, #8000A3, #FF8600, #8000A3, #FF8600);
+	background-size: 1000% 1000%;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#titleText{
+	color: rgba(0,0,0,0);
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+	/* make text stroke outset instead of surrounding text to make it look bigger*/
+}
+
+.news-article{
+	transition: 0.3s;
+	background-color: #525252;
+}
+
+.link-head{
+	transition: 0.3s;
+	color: #FFFFFF;
+}
+
+.news-article:hover{
+	background-color: #FF8600;
+}
+
+.link-head:hover{
+	color: #FF8600;
+}
+
+hr {
+	width: 50%;
+	height: 10px;
+	opacity: 100%;
+	text-align: center;
+}
+
+/*WORK ON THIS*/
+.scrollable-x{
+	width: 100%;
+    height: 450px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollable-x li{
+	width: 300px;
+    background-color: #FFFFFF;
+    float: none;
+    margin: 0 0.25%;
+    display: inline-table;
+}
+
+.scrollable-x li h4{
+	font-size: 20px;
+}
+
+.scrollable-x li figure{
+	height: 10%;
+	width: auto;
+}
+
+.scrollable-x li figure img{
+	object-fit: cover;
+}
+
+.shop-button{
+	transition: 0.3s;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #FF8600;
+}
+
+.shop-button:hover{
+	color: #FFFFFF;
+	background: #8000A3;
+}
+/*WORK ON THIS ABOVE*/
+
+#footer img{
+	transition: .2s;
+	border-radius: 25%;
+	background-color: #8000A3;
+}
+
+#footer img:hover{
+	background-color: #FF8600;
+}
+
+/* Visual Elements End */
+
+/* Shop Carousel */
+#shopCarousel, .carousel-inner, .carousel-item, .carousel-item.active {
+	height: 50vh;
+}
+
+.carousel-item{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.carousel-item:nth-child(1) {
+	background-image:  url("../Images/Carousel1.jpg");
+}
+.carousel-item:nth-child(2) {
+	background-image: url("../Images/Carousel2.jpg");
+}
+.carousel-item:nth-child(3) {
+	background-image: url("../Images/Carousel3.jpg");
+}
+.carousel-item:nth-child(4) {
+	background-image: url("../Images/Carousel4.jpg");
+}
+
+.carousel-text{
+	padding-left: 15%;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+	#shopCarousel {
+		margin-top: -58.59px;
+	}
+	#shopCarousel,
+	.carousel-inner,
+	.carousel-item,
+	.carousel-item.active {
+		height: 50vh;
+	}
+}
+/* Shop Carousel End */
+
+
+/* Palette Colours (prefix pal-) Note: adjust these colours later*/
+.pal-white {color: #FFFFFF;}
+.pal-bg-white {background-color: #FFFFFF;}
+
+.pal-black {color: #000000; background-color: #000000;}
+.pal-bg-black {background-color: #000000;}
+
+.pal-grey-1 {color: #525252;}
+.pal-bg-grey-1 {background-color: #525252;}
+
+.pal-grey-2 {color: #1D1D1D;}
+.pal-bg-grey-2 {background-color: #1D1D1D;}
+
+.pal-orange {color: #FF8600;}
+.pal-bg-orange {background-color: #FF8600;}
+
+.pal-purple {color: #8000A3;}
+.pal-bg-purple {background-color: #8000A3;}
+/* Palette Colours End */
